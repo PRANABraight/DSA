@@ -1,0 +1,13 @@
+Starting IDS scan from node 0...
+
+BFS Intrusion Detection Scan Results:
+Alert! Suspicious activity detected at node 0
+Warning: Node 1 connected to malicious node 0
+Alert! Suspicious activity detected at node 1
+Alert! Suspicious activity detected at node 0
+Warning: Node 1 connected to malicious node 0
+Alert! Suspicious activity detected at node 1
+
+Final Network Status:
+Node 0: Malicious
+Node 1: Malicious

@@ -1,0 +1,16 @@
+Single Pointer (*head):
+Use a single pointer when you want to traverse the list or perform operations that do not require changing the head pointer itself.
+
+Useful for read-only operations or modifying the nodes without altering the starting point of the list.
+
+Double Pointer (**head):
+Use a double pointer when you need to modify the head pointer itself, such as inserting or deleting nodes at the beginning of the list.
+
+Allows the function to update the actual head pointer that is passed to it, enabling changes to the list structure.
+
+Example Scenario: Inserting at the End
+When inserting at the end of a linked list, you might not always need to modify the head pointer directly, but using a double pointer ensures that you can handle an initially empty list. Here’s why:
+
+Initial Empty List: If the list is empty, the head pointer is NULL. You need to update the head pointer to point to the new node, which requires modifying the original head pointer.
+
+Flexibility: Using a double pointer provides flexibility to handle various cases uniformly, including updating the head pointer when necessary.
