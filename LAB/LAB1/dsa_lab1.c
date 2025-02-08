@@ -25,7 +25,7 @@ int main() {
         }
     }
 
-    // Input elements of second matrix (for addition and subtraction)
+    // Input elements of second matrix 
     if (N == n && M == m) {
         printf("Input the %d elements of the second matrix (for addition/subtraction):\n", N * M);
         for (int i = 0; i < N; i++) {
@@ -37,7 +37,7 @@ int main() {
         printf("Addition and subtraction cannot be performed since the dimensions do not match.\n");
     }
 
-    // Input elements of third matrix (for multiplication)
+    // Input elements of third matrix 
     if (M == n) {
         printf("Input the %d elements of the third matrix (for multiplication):\n", n * m);
         for (int i = 0; i < n; i++) {
@@ -54,14 +54,6 @@ int main() {
     int sum[N][M];         
     int sub[N][M];         
     int mult[N][m]; 
-
-    // Initialize row sum and column sum arrays
-    for (int i = 0; i < N; i++) {
-        rowsum[i] = 0;
-    }
-    for (int j = 0; j < M; j++) {
-        colsum[j] = 0;
-    }
 
     int choice;
 
@@ -91,7 +83,7 @@ int main() {
                 // Column sum
                 for (int j = 0; j < M; j++) {
                     colsum[j] = 0;  
-                    for (int i = 0; i < N; i++) {
+                    for (int i = 0; i < N; i++) { 
                         colsum[j] += arr[i][j];
                     }
                     printf("Column %d sum: %d\n", j + 1, colsum[j]);
